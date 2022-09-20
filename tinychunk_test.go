@@ -3,20 +3,20 @@ package tinychunk_test
 import (
 	"fmt"
 	. "github.com/BitlyTwiser/tinychunk"
+	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"log"
 	"os"
 	"testing"
-  "github.com/google/uuid"
 )
 
 // Simply write files, then delete them.
 func fileFunc(fileData []byte) error {
-  err := os.WriteFile(fmt.Sprintf("./assets/test/%v.txt", uuid.NewString()), fileData, 0700)
+	err := os.WriteFile(fmt.Sprintf("./assets/test/%v.txt", uuid.NewString()), fileData, 0700)
 
-  if err != nil {
-    return err
-  }
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
