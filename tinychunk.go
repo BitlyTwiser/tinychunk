@@ -44,7 +44,7 @@ func Chunk(data []byte, mbSize int, chunkAction func([]byte) error) error {
 		partitionSize := int(math.Min(float64(chunkSize), float64(dataSize-int(i)*chunkSize)))
 
 		// Making newfound buffer to store data.
-    buffer := &bytes.Buffer{}
+		buffer := &bytes.Buffer{}
 
 		// Write data to buffer
 		writtenBytes, err := buffer.Write(data[:partitionSize])
