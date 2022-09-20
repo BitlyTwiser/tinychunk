@@ -12,7 +12,7 @@ import (
 
 // Simply write files, then delete them.
 func fileFunc(fileData []byte) error {
-  err := os.WriteFile(fmt.Sprintf("./assets/%v.txt", uuid.NewString()), fileData, 0700)
+  err := os.WriteFile(fmt.Sprintf("./assets/test/%v.txt", uuid.NewString()), fileData, 0700)
 
   if err != nil {
     return err
