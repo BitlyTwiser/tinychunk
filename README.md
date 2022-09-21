@@ -1,6 +1,9 @@
 # tinyChunk
 Tiny library for splicing byte streams into chunks.
 
+## Installation:
+```go get github.com/BitlyTwiser/tinychunk```
+
 ## Example usage and Testing:
 - For simple usage, one can look to the testing within the project to gleen how the chunker can operate:
 - Simply craft a function and pass said function as an argument itno the chunker. This, along with the data and the size of the chunks (in MB) will chunk your data and perform the given operations upon the chunked byte segments.
