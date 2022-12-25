@@ -1,5 +1,6 @@
 # tinyChunk
 Tiny library for splicing byte streams into chunks.
+[![Go Report Card](https://goreportcard.com/badge/github.com/BitlyTwiser/tinychunk)](https://goreportcard.com/report/github.com/BitlyTwiser/tinychunk)
 
 ## Installation:
 ```go get github.com/BitlyTwiser/tinychunk```
